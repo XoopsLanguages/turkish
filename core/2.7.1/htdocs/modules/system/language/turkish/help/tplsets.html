@@ -1,0 +1,36 @@
+<div class="outer" id="help-template">
+<h1 class="head">Yardım: Şablonlar</h1>
+<h4 class="odd">Açıklama</h4>
+<p class="even">
+        XOOPS, sitenin gerçek sunumu arasında bir miktar ayrım yapılmasına izin verir (“<em>cilt</em>” veya kullanıcı arayüzü) ve arkada çalışan kod. İlki, grafiksel temalara dayalı karmaşık bir mekanizma tarafından yönetilir. Bir tema, temel biçiminde temel HTML'yi içerebilir.
+        sitenin görsel arayüzünü tanımlayan şablonların yanı sıra bu görsel arayüzü tamamlamak için gereken stil sayfaları ve resimler. Temalar yönetim arayüzünde değiştirilebilir, bu nedenle bir XOOPS sitesinin tüm görünümünü değiştirmek yalnızca bir sitenin değerini değiştirmekten ibarettir.
+        seçiciyi seçin ve “Kabul Et” seçeneğine tıklayın. XOOPS ayrıca site yöneticilerine kullanıcıların mevcut bazı temalar arasından seçim yapmasına izin verme olanağı sağlar.<br/><br/>
+
+        Genel olarak konuşursak, bir <strong><em>teması</em></strong> bir sitenin üst düzey görsel çerçevesidir: tema, örneğin sitenin genel düzenini tanımlar; diğer yandan genellikle bir blok içindeki içeriğin spesifik dağılımını tanımlamaz. Bu bir kişi tarafından ele alınır
+        adı verilen farklı bir varlık <em><strong>şablon seti</strong></em>. Bir şablon seti<em> </em>, bir XOOPS Web sitesini oluşturan tüm bloklardaki içeriğin sunumunu tanımlayan bir HTML şablonları topluluğudur. Bunun için daha net bir metafor istersek temanın şöyle olduğunu söyleyebiliriz.
+        Bir evin mimarı, şablon seti ise iç mimar gibidir. Birincisi duvarları örer ve genel dağılımı tanımlar, ancak ikincisi “sorumlu olandır”<em>giyinme</em>” şu duvarlar.<br/><br/>
+
+        Etkin tema yalnızca bir tema dosyası, CSS dosyaları ve bazı resimler içeren basit bir temaysa, XOOPS, blokların sunumunu tanımlamak için varsayılan şablon setini kullanır. Ancak bazı karmaşık temalar kendi şablon setini içerecek kadar karmaşıktır. Bu durumda site
+        yöneticinin hem temayı hem de şablon setini ayarlamak için yönetim arayüzünü kullanması gerekir. <br/><br/>
+
+        Tema nasıl <em>büyü</em> başarılı oldu mu? Yani HTML şablonları nasıl dinamik içerik içerebilir? Bu, aynalar ve dumanla değil, adı verilen akıllı bir şablon motoruyla yapılır.
+        <strong><a href="https://www.smarty.net/" rel="external">Akıllı</a></strong> eskiden çağrılan şeyin işlevini yerine getirir
+        <em><strong>değişken enterpolasyonu</strong></em>. Basit bir şekilde ifade edersek, XOOPS sisteminin modüllerin mantığını (veritabanına erişim, değişkenlerin tahsisi, hakların yönetimi...) tutmak için PHP dosyalarını, modülü yönetmek için Smarty değişkenlerinin eklendiği HTML dosyalarını kullandığını söyleyebiliriz.
+        gerçek görsel arayüz ve son kullanıcı tarafından görülen sayfaları oluşturan HTML içindeki belirli yerlere değerler ve dizeler eklemek için Smarty motoru. Sonuç olarak, bunun sizin için ne anlama geldiğini kolayca özetleyebilirsiniz: XOOPS, tema sistemi sayesinde site tasarımcılarının daha fazlasını oluşturmasına olanak tanır
+        ilginç ve görsel olarak büyüleyici siteler, arka planda ne olduğu konusunda fazla endişe duymuyor.
+    </p>
+<h4 class="odd">Şablon setlerini klonlama ve indirme</h4>
+<p class="even">
+        Özel bir şablon seti oluşturmak istiyorsanız, ' seçeneğini seçerek varsayılan setin (veya herhangi bir başkasının) bir kopyasını oluşturabilirsiniz.<em>klon</em>’ bağlantısı (yeni gruba bir ad vermeniz istenecektir). Varsayılanın aksine diğer şablon kümeleri serbestçe düzenlenebilir. Ayrıca bir kopyasını da kaydedebilirsiniz.
+        ' seçeneğini seçerek diske ayarlanan şablon<em>indir</em>’ bağlantısını kullanın veya ‘ ile kaldırın<em>sil</em>’ bağlantısı. Ayrıca bazen ek bir ‘<em>Oluştur</em>’ bağlantısı.
+    </p>
+<h4 class="odd">Şablonları düzenleme</h4>
+<p class="even">
+        Dizin ağaç görünümüne göz atarak mevcut şablonların tam listesini görebilirsiniz. Bir şablon seçtiğinizde, XOOPS onu düzenleyebileceğiniz bir düzenleyicide açacaktır. <br/><br/>
+
+        Şablonları düzenlerken, geçerli tema için temalar/temanız/şablonlar dizini altında daha yeni dosyalar varsa modül şablonu .tpl dosyalarını otomatik olarak güncelleyen bir tercihi etkinleştirmelisiniz (Sistem Modülü -&gt; Tercihler -&gt; Genel Ayarlar -&gt; Modül şablonu .tpl dosyalarını güncelle)
+        temalardan/temanızdan/şablonlar dizininizden mi? -&gt; '<em>Evet</em>’). Site halka açıldığında bu kapatılmalıdır.<br/><br/>
+        Eğer yanlışlıkla bir şablonu karıştırırsanız, '<em>iyi</em>’ varsayılan şablon kümesinden kopyalayın. Standart olmayan şablonlarla çalışıyorsanız, bunları değiştirmeye başlamadan önce bir kopyasını diske kaydetmek iyi bir fikir olabilir.
+
+    </p>
+</div>

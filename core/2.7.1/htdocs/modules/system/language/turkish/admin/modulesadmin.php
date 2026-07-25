@@ -1,0 +1,164 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    tr
+ * _CHARSET     UTF-8
+ */
+define('_AM_SYSTEM_MODULES_ADMIN', 'XOOPS Modül Yönetimi');
+define('_AM_SYSTEM_MODULES_LIST', 'Modül Listesi');
+define('_AM_SYSTEM_MODULES_TOINSTALL', 'Modül Kur');
+define('_AM_SYSTEM_MODULES_VALIDATE', 'Değişiklikleri Doğrula');
+define('_AM_SYSTEM_MODULES_SUBMITRES', 'Sonucu gönder');
+define('_AM_SYSTEM_MODULES_RUSUREINS', 'Bu modülü kurmak için aşağıdaki düğmeye basın');
+define('_AM_SYSTEM_MODULES_RUSUREUNINS', 'Bu modülü kaldırmak istediğinizden emin misiniz?');
+define('_AM_SYSTEM_MODULES_RUSUREUPD', 'Bu modülü güncellemek için aşağıdaki düğmeye basın');
+define('_AM_SYSTEM_MODULES_BTOMADMIN', 'XOOPS Modül Yönetimi');
+define('_AM_SYSTEM_MODULES_INSTALLING', 'Kuruluyor ');
+define('_AM_SYSTEM_MODULES_DEACTIVATE', 'Devre Dışı Bırak ');
+define('_AM_SYSTEM_MODULES_ACTIVATE', 'Etkinleştir ');
+define('_AM_SYSTEM_MODULES_UPDATING', 'Güncelleniyor ');
+define('_AM_SYSTEM_MODULES_INSTALL', 'Kur');
+define('_AM_SYSTEM_MODULES_UNINSTALL', 'Kaldır');
+define('_AM_SYSTEM_MODULES_UPDATE', 'Güncelle');
+define('_AM_SYSTEM_MODULES_VIEWLARGE', 'Büyük Görünüm');
+define('_AM_SYSTEM_MODULES_VIEWLINE', 'Satır Görünümü');
+define('_AM_SYSTEM_MODULES_FAILINS', '%s kurulamadı.');
+define('_AM_SYSTEM_MODULES_FAILACT', '%s etkinleştirilemiyor.');
+define('_AM_SYSTEM_MODULES_FAILDEACT', '%s devre dışı bırakılamıyor.');
+define('_AM_SYSTEM_MODULES_FAILUPD', '%s güncellenemiyor.');
+define('_AM_SYSTEM_MODULES_FAILUNINS', '%s kaldırılamadı.');
+define('_AM_SYSTEM_MODULES_FAILORDER', '%s yeniden sıralanamıyor.');
+define('_AM_SYSTEM_MODULES_FAILWRITE', 'Ana menüye yazılamıyor.');
+define('_AM_SYSTEM_MODULES_ALEXISTS', '%s modülü zaten var.');
+define('_AM_SYSTEM_MODULES_OKINS', '%s modülü başarıyla kuruldu.');
+define('_AM_SYSTEM_MODULES_OKACT', '%s modülü başarıyla etkinleştirildi.');
+define('_AM_SYSTEM_MODULES_OKDEACT', '%s modülü başarıyla devre dışı bırakıldı.');
+define('_AM_SYSTEM_MODULES_OKUPD', '%s modülü başarıyla güncellendi.');
+define('_AM_SYSTEM_MODULES_OKUNINS', '%s modülü başarıyla kaldırıldı.');
+define('_AM_SYSTEM_MODULES_OKORDER', '%s modülü başarıyla değiştirildi.');
+define('_AM_SYSTEM_MODULES_MODULE', 'Modül');
+define('_AM_SYSTEM_MODULES_VERSION', 'Sürüm');
+define('_AM_SYSTEM_MODULES_LASTUP', 'Son Güncelleme');
+define('_AM_SYSTEM_MODULES_DEACTIVATED', 'Devre Dışı');
+define('_AM_SYSTEM_MODULES_ACTION', 'İşlem');
+define('_AM_SYSTEM_MODULES_MENU', 'Menü');
+define('_AM_SYSTEM_MODULES_HIDE', 'Gizle');
+define('_AM_SYSTEM_MODULES_SHOW', 'Göster');
+define('_AM_SYSTEM_MODULES_DUPEN', 'Modül tablosunda yinelenen giriş!');
+define('_AM_SYSTEM_MODULES_DEACTED', 'Seçilen modül devre dışı bırakıldı. Artık modülü güvenle kaldırabilirsiniz.');
+define('_AM_SYSTEM_MODULES_ACTED', 'Seçilen modül etkinleştirildi!');
+define('_AM_SYSTEM_MODULES_UPDTED', 'Seçilen modül güncellendi!');
+define('_AM_SYSTEM_MODULES_SYSNO', 'Sistem modülü devre dışı bırakılamaz.');
+define('_AM_SYSTEM_MODULES_STRTNO', 'Bu modül varsayılan başlangıç ​​sayfanız olarak ayarlanmıştır. Lütfen başlangıç ​​modülünü tercihlerinize uygun olanla değiştirin.');
+define('_AM_SYSTEM_MODULES_ORDER', 'Sıra');
+define('_AM_SYSTEM_MODULES_ACTIVE', 'Aktif');
+define('_AM_SYSTEM_MODULES_INACTIVE', 'Aktif Değil');
+define('_AM_SYSTEM_MODULES_NOTINSTALLED', 'Kurulmamış');
+define('_AM_SYSTEM_MODULES_NOCHANGE', 'Değişiklik Yok');
+define('_AM_SYSTEM_MODULES_SUBMIT', 'Gönder');
+define('_AM_SYSTEM_MODULES_CANCEL', 'İptal');
+define('_AM_SYSTEM_MODULES_DBUPDATE', _AM_SYSTEM_DBUPDATED);
+define('_AM_SYSTEM_MODULES_NEWBLKS', 'New Blocks');
+define('_AM_SYSTEM_MODULES_DEPREBLKS', 'Kullanımdan Kaldırılan Bloklar');
+define('_AM_SYSTEM_MODULES_TABLE_RESERVED', '%s ayrılmış bir masadır!');
+define('_AM_SYSTEM_MODULES_CREATE_TABLES', 'Tablolar oluşturuluyor...');
+define('_AM_SYSTEM_MODULES_TABLE_CREATED', 'Tablo %s oluşturuldu');
+define('_AM_SYSTEM_MODULES_INSERT_DATA', '&nbsp;&nbsp; %s tablosuna eklenen veriler');
+define('_AM_SYSTEM_MODULES_INSERT_DATA_FAILD', '%s veritabanına eklenemedi.');
+define('_AM_SYSTEM_MODULES_INSERT_DATA_DONE', 'Modül verileri başarıyla eklendi.');
+define('_AM_SYSTEM_MODULES_MODULEID', 'Modül Kimliği: %s');
+define('_AM_SYSTEM_MODULES_SQL_FOUND', 'SQL dosyası %s konumunda bulundu');
+define('_AM_SYSTEM_MODULES_SQL_NOT_FOUND', 'SQL dosyası %s konumunda bulunamadı');
+define('_AM_SYSTEM_MODULES_SQL_NOT_CREATE', 'HATA: %s oluşturulamadı');
+define('_AM_SYSTEM_MODULES_SQL_NOT_VALID', '%s geçerli bir SQL değil!');
+define('_AM_SYSTEM_MODULES_GROUP_ID', 'Grup Kimliği: %s');
+define('_AM_SYSTEM_MODULES_NAME', 'İsim:');
+define('_AM_SYSTEM_MODULES_VALUE', 'Değer:');
+define('_AM_SYSTEM_MODULES_TEMPLATES_ADD', 'Şablonlar ekleniyor...');
+define('_AM_SYSTEM_MODULES_TEMPLATES_DELETE', 'Şablonlar siliniyor...');
+define('_AM_SYSTEM_MODULES_TEMPLATES_UPDATE', 'Şablonlar güncelleniyor...');
+define('_AM_SYSTEM_MODULES_TEMPLATE_ID', 'Şablon Kimliği: %s');
+define('_AM_SYSTEM_MODULES_TEMPLATE_ADD_DATA', 'Şablon %s veritabanına eklendi');
+define('_AM_SYSTEM_MODULES_TEMPLATE_ADD_ERROR', 'HATA: %s şablonu veritabanına eklenemedi.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_COMPILED', 'Şablon %s derlendi');
+define('_AM_SYSTEM_MODULES_TEMPLATE_COMPILED_FAILED', 'HATA: Şablonun derlenmesi başarısız oldu %s');
+define('_AM_SYSTEM_MODULES_TEMPLATE_DELETE_DATA', 'Şablon %s veritabanından silindi.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_DELETE_DATA_FAILD', 'HATA: %s şablonu veritabanından silinemedi.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_INSERT_DATA', 'Şablon %s veritabanına eklendi.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_RECOMPILE', 'Şablon %s yeniden derlendi');
+define('_AM_SYSTEM_MODULES_TEMPLATE_RECOMPILE_FAILD', 'HATA: Şablon %s yeniden derlemesi başarısız oldu');
+define('_AM_SYSTEM_MODULES_TEMPLATE_RECOMPILE_ERROR', 'HATA: %s şablonu yeniden derlenemedi');
+define('_AM_SYSTEM_MODULES_TEMPLATE_DELETE_OLD_ERROR', 'HATA: Eski şablon %s silinemedi. Bu dosyanın güncellenmesi iptal ediliyor.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_UPDATE', 'Şablon %s güncellendi.');
+define('_AM_SYSTEM_MODULES_TEMPLATE_UPDATE_ERROR', 'HATA: %s şablonu güncellenemedi.');
+define('_AM_SYSTEM_MODULES_BLOCKS_ADD', 'Bloklar ekleniyor...');
+define('_AM_SYSTEM_MODULES_BLOCKS_DELETE', 'Blok siliniyor...');
+define('_AM_SYSTEM_MODULES_BLOCKS_REBUILD', 'Bloklar yeniden oluşturuluyor...');
+define('_AM_SYSTEM_MODULES_BLOCK_ID', 'Blok Kimliği: %s');
+define('_AM_SYSTEM_MODULES_BLOCK_ACCESS', 'Blok erişim hakkı eklendi');
+define('_AM_SYSTEM_MODULES_BLOCK_ACCESS_ERROR', 'HATA: Erişim hakkı engellenemedi');
+define('_AM_SYSTEM_MODULES_BLOCK_ADD', 'Blok %s eklendi');
+define('_AM_SYSTEM_MODULES_BLOCK_ADD_ERROR', 'HATA: %s bloğu veritabanına eklenemedi!');
+define('_AM_SYSTEM_MODULES_BLOCK_ADD_ERROR_DATABASE', 'Veritabanı hatası: %s');
+define('_AM_SYSTEM_MODULES_BLOCK_CREATED', 'Blok %s oluşturuldu');
+define('_AM_SYSTEM_MODULES_BLOCK_DELETE', 'Blok %s silindi.');
+define('_AM_SYSTEM_MODULES_BLOCK_DELETE_DATA', 'Blok şablonu %s veritabanından silindi.');
+define('_AM_SYSTEM_MODULES_BLOCK_DELETE_ERROR', 'HATA: %s bloğu silinemedi');
+define('_AM_SYSTEM_MODULES_BLOCK_DELETE_TEMPLATE_ERROR', 'HATA: %s blok şablonu veritabanından silinemedi');
+define('_AM_SYSTEM_MODULES_BLOCK_DEPRECATED', 'Blok şablonu %s kullanımdan kaldırıldı');
+define('_AM_SYSTEM_MODULES_BLOCK_DEPRECATED_ERROR', 'HATA: Kullanımdan kaldırılan blok şablonu kaldırılamadı.');
+define('_AM_SYSTEM_MODULES_BLOCK_UPDATE', 'Blok %s güncellendi.');
+define('_AM_SYSTEM_MODULES_GONFIG_ID', 'Yapılandırma Kimliği: %s');
+define('_AM_SYSTEM_MODULES_MODULE_DATA_ADD', 'Modül yapılandırma verileri ekleniyor...');
+define('_AM_SYSTEM_MODULES_MODULE_DATA_DELETE', 'Modül yapılandırma seçenekleri siliniyor...');
+define('_AM_SYSTEM_MODULES_MODULE_DATA_UPDATE', 'Modül verileri güncellendi.');
+define('_AM_SYSTEM_MODULES_CONFIG_ADD', 'Yapılandırma seçeneği eklendi');
+define('_AM_SYSTEM_MODULES_CONFIG_DATA_ADD', 'Yapılandırma %s veritabanına eklendi');
+define('_AM_SYSTEM_MODULES_CONFIG_DATA_ADD_ERROR', 'HATA: %s yapılandırması veritabanına eklenemedi.');
+define('_AM_SYSTEM_MODULES_GONFIG_DATA_DELETE', 'Yapılandırma verileri veritabanından silindi.');
+define('_AM_SYSTEM_MODULES_CONFIG_DATA_DELETE_ERROR', 'HATA: Yapılandırma verileri veritabanından silinemedi');
+define('_AM_SYSTEM_MODULES_GROUP_SETTINGS_ADD', 'Grup hakları ayarlanıyor...');
+define('_AM_SYSTEM_MODULES_GROUP_PERMS_DELETE_ERROR', 'HATA: Grup izinleri silinemedi');
+define('_AM_SYSTEM_MODULES_GROUP_PERMS_DELETED', 'Grup izinleri silindi');
+define('_AM_SYSTEM_MODULES_ACCESS_ADMIN_ADD', 'Grup Kimliği %s için yönetici erişimi hakkı eklendi');
+define('_AM_SYSTEM_MODULES_ACCESS_ADMIN_ADD_ERROR', 'HATA: %s Grup Kimliği için yönetici erişimi hakkı eklenemedi');
+define('_AM_SYSTEM_MODULES_ACCESS_USER_ADD', 'Grup Kimliği için kullanıcı erişim hakkı eklendi: %s');
+define('_AM_SYSTEM_MODULES_ACCESS_USER_ADD_ERROR', 'HATA: Grup Kimliği için kullanıcı erişim hakkı eklenemedi: %s');
+define('_AM_SYSTEM_MODULES_FAILED_EXECUTE', '%s yürütülemedi');
+define('_AM_SYSTEM_MODULES_FAILED_SUCESS', '%s başarıyla yürütüldü.');
+define('_AM_SYSTEM_MODULES_DELETE_ERROR', 'HATA: %s silinemedi');
+define('_AM_SYSTEM_MODULES_UPDATE_ERROR', 'HATA: %s güncellenemedi');
+define('_AM_SYSTEM_MODULES_DELETE_MOD_TABLES', 'Modül tabloları siliniyor...');
+define('_AM_SYSTEM_MODULES_COMMENTS_DELETE', 'Yorumlar siliniyor...');
+define('_AM_SYSTEM_MODULES_COMMENTS_DELETE_ERROR', 'HATA: Yorumlar silinemedi');
+define('_AM_SYSTEM_MODULES_COMMENTS_DELETED', 'Yorumlar silindi');
+define('_AM_SYSTEM_MODULES_NOTIFICATIONS_DELETE', 'Bildirimler siliniyor...');
+define('_AM_SYSTEM_MODULES_NOTIFICATIONS_DELETE_ERROR', 'HATA: Bildirimler silinemedi');
+define('_AM_SYSTEM_MODULES_NOTIFICATIONS_DELETED', 'Bildirimler silindi');
+define('_AM_SYSTEM_MODULES_TABLE_DROPPED', 'Tablo %s düştü!');
+define('_AM_SYSTEM_MODULES_TABLE_DROPPED_ERROR', 'HATA: %s tablosu bırakılamadı');
+define('_AM_SYSTEM_MODULES_TABLE_DROPPED_FAILDED', 'HATA: %s tablosunun düşürülmesine izin verilmiyor!');
+define('_AM_SYSTEM_MODULES_CONFIRM_TIPS', '<ul>
+<li>Doğrulamak için tüm değişiklikleri kontrol edin.</li>
+</ul>');
+define('_AM_SYSTEM_MODULES_INSTALL_TESTDATA', 'Test Verisi Ekle');
+define('_AM_SYSTEM_MODULES_INSTALL_MORE', 'Daha fazla modül kur');
+define('_AM_SYSTEM_MODULES_INSTALL_THISMODULE', 'Bu modülün yöneticisi');
+define('_AM_SYSTEM_MODULES_FK_DISABLE', 'Yabancı anahtar kontrolleri devre dışı bırakılamadı');
+define('_AM_SYSTEM_MODULES_FK_ENABLE', 'Yabancı anahtar kontrolleri etkinleştirilemedi');
+define('_AM_SYSTEM_MODULES_DROP_FAIL', 'Tablo bırakılamadı: %s');
+define('_AM_SYSTEM_MODULES_DROP_OK', 'Bırakılan tablo: %s');
+
+//2.7.1 backfilled translations
+define('_AM_SYSTEM_MODULES_TIPS', '<ul>
+<li>Yeni bir modül kurarsanız, modül tercihlerini, bloklarını ve kullanıcı izinlerini ayarlamayı unutmayın!</li>
+<li>Bir modülü Ana Menü bloğunda gizlemek için sırayı 0 olarak ayarlayın.</li>
+<li>Güvenlik sorunlarını önlemek ve sitenizi güvende tutmak için kullanılmayan modül dosyalarını sunucunuzdan silin.</li>
+<li>Modüllerin sırasını değiştirmek için (menüye yansır) modülleri istediğiniz yere sürükleyip bırakmanız yeterlidir.</li>
+</ul>');
+define('_AM_SYSTEM_MODULES_ORDER0', '(0 = gizle)');
+define('_AM_SYSTEM_MODULES_ERRORSC', 'Hata(lar):');
+define('_AM_SYSTEM_MODULES_LISTUPBLKS', 'Aşağıdaki bloklar güncellenecek.<br>İçeriği (şablon ve seçenekler) üzerine yazılabilecek blokları seçin.<br>');
+//2.7.1
+define('_AM_SYSTEM_MODULES_CONFIG_DATA_INVALID', ' ERROR: Skipped malformed config entry %s. ');

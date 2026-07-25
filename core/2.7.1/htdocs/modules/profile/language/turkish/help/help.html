@@ -1,0 +1,50 @@
+<div class="outer" id="help-template">
+<h1 class="head">Yardım: <a class="ui-corner-all tooltip" href="&lt;{$xoops_url}&gt;/modules/profile/admin/index.php" title="Back to the Administration of Profile"> Profil <img alt="Back to the Administration of Profile" src="&lt;{xoAdminIcons 'home.png'}&gt;"/></a></h1>
+ -----Yardım İçeriği ---------- 
+<h4 class="odd">AÇIKLAMA</h4>
+<p class="even">Profil modülü, özel kullanıcı profili alanlarını yönetmek içindir.</p>
+<h4 class="odd">YÜKLE/KALDIR</h4>
+<p>Özel bir önlem gerekmez, standart kurulum sürecini izleyin – /profile klasörünü ../modules dizinine çıkarın. Modülü Yönetici -&gt; Sistem Modülü -&gt; Modüller yoluyla yükleyin.</p>
+<p>Modüllerin kurulumuna ilişkin ayrıntılı talimatlar şurada mevcuttur: <a href="https://www.gitbook.com/book/xoops/xoops-operations-guide/" target="_blank" title="XOOPS Operations Manual">XOOPS Kullanım Kılavuzu</a> <br/><br/></p>
+<h4 class="odd">KULLANIM TALİMATLARI</h4>
+<p class="even">Bu modülü kurmak için yapmanız gerekenler:</p>
+<ul>
+<li>Modül (bkz. 'Tercihler') ve kullanmayı planlıyorsanız isteğe bağlı olarak Profil bloğu (bkz. 'Bloklar') için tercihlerinizi yapılandırın.</li>
+<li>Mevcut Kategorileri düzenleyin veya yenilerini ekleyin.</li>
+<li>Mevcut Alanları düzenleyin veya yenilerini ekleyin. Burada hangi alanların hangi kategoride görüneceğini ve kullanıcı kaydı sırasında görünüp görünmeyeceğini belirleyebilirsiniz.</li>
+<li>Kayıt adımlarının sırasını tanımlayın.</li>
+<li>Ve son olarak, bireysel alanlar için izinler ayarlayabilirsiniz; hangileri düzenlenebilir, hangileri aranabilir.<br/><br/></li>
+</ul>
+<h4 class="odd">Anti-Spam önlemleri</h4>
+<p class="even">Spam kayıtlarını en aza indirmek için aşağıdakileri yapın:</p>
+<ul>
+<li> Yönetici'de Koruyucu modülüne gidin, Tercihler'e gidin ve ardından en altta şu seçeneğe gidin:
+
+            "Forum Spamını Durdur"
+            POST verilerini www.stopforumspam.com veritabanına kayıtlı spam gönderenlere karşı kontrol eder. <br/>
+            "IP'yi yasakla (sınır yok)" olarak ayarlayın
+        </li>
+<br/>
+<li> /class/captcha/config.php dosyasında, modun "metin" olarak ayarlandığından emin olun:<br/><br/>
+<span style="font-style: italic;">     return $yapılandırma = dizi(<br/>
+    'devre dışı' =&gt; yanlış, // CAPTCHA'yı devre dışı bırak<br/>
+    'mode' =&gt; 'text', // varsayılan mod, 'text', 'image', 'recaptcha'yı seçebilirsiniz(api anahtarı gerektirir)<br/>
+    'isim' =&gt; 'xoopscaptcha', // captcha adı<br/>
+    'skipmember' =&gt; doğru, // Üyeler için CAPTCHA kontrolünü atla<br/>
+    'maxattempts' =&gt; 10, // Her oturum için maksimum deneme sayısı<br/>
+    );</span></li>
+<br/>
+<li> Profil modülünde Yönetici'ye gidin ve şu konumda bulunan Temel adıma gidin:<br/>
+
+            /modules/profile/admin/step.php?id=1<br/>
+
+            "Durduktan sonra kaydet" seçeneğini "Hayır" olarak ayarlayın
+        </li>
+<br/><br/>
+<li> Profil Tercihlerinde, "İkinci Kayıt adımından sonra Captcha'yı kullan" Seçeneğini "Evet" olarak ayarlayın (varsayılandır)</li>
+<br/>
+<ul>
+<h4 class="odd">ÖĞRETİCİ</h4>
+<p class="even">Öğretici çok yakında.<br/></p>
+ -----Yardım İçeriği ---------- 
+</ul></ul></div>

@@ -1,0 +1,663 @@
+DİL FARKLARI
+=====================
+
+Aşağıda bir sürümden sonraki sürüme olan dil farklılıkları verilmiştir.
+
+================================
+2025/03/30: Sürüm 2.7.0-Betalar (daha önce 2.5.12-Beta olarak yayınlanmıştı)
+================================
+/htdocs/modules/system/language/english/admin.php
+- define('_AM_SYSTEM_MENUS', 'Menüler') eklendi;
+- define('_AM_SYSTEM_MENUS_DESC', 'Site gezinme menülerini yönet'); eklendi
+
+/htdocs/modules/system/language/english/modinfo.php
+- define('_MI_SYSTEM_MENUS_ACTIVE', 'Menü Sistemini Etkinleştir'); eklendi
+- define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Sitede gezinme için yerleşik menü yönetim sistemini etkinleştirin'); eklendi
+
+/htdocs/modules/system/language/english/admin/menus.php (YENİ DOSYA)
+- define('_AM_SYSTEM_MENUS_NAV_MAIN', 'Menü Yöneticisi') eklendi;
+- define('_AM_SYSTEM_MENUS_NAV_BACK', 'Menü Listesine Geri Dön'); eklendi
+- ​​define('_AM_SYSTEM_MENUS_NAV_CATEGORY', 'Kategori Görünümü') eklendi;
+- define('_AM_SYSTEM_MENUS_NAV_TIPS', '<strong>İpuçları:</strong><ul>...'); eklendi
+- define('_AM_SYSTEM_MENUS_ACTIVE', 'Aktif') eklendi;
+- define('_AM_SYSTEM_MENUS_ACTIVE_YES', 'Etkin') eklendi;
+- define('_AM_SYSTEM_MENUS_ACTIVE_NO', 'Disabled') eklendi;
+- define('_AM_SYSTEM_MENUS_SAVED', 'Başarıyla kaydedildi'); eklendi
+- define('_AM_SYSTEM_MENUS_DELETED', 'Başarıyla silindi'); eklendi
+- define('_AM_SYSTEM_MENUS_ORDER_SAVED', 'Sipariş kaydedildi'); eklendi
+- define('_AM_SYSTEM_MENUS_LISTCAT', 'Liste Kategorileri') eklendi;
+- define('_AM_SYSTEM_MENUS_LISTITEM', 'Öğeleri Listele') eklendi;
+- ​​define('_AM_SYSTEM_MENUS_ADDCAT', 'Kategori Ekle'); eklendi
+- define('_AM_SYSTEM_MENUS_EDITCAT', 'Kategoriyi Düzenle') eklendi;
+- define('_AM_SYSTEM_MENUS_DELCAT', 'Kategoriyi Sil'); eklendi
+- define('_AM_SYSTEM_MENUS_CATTITLE', 'Kategori Başlığı') eklendi;
+- define('_AM_SYSTEM_MENUS_CATTITLE_DESC', 'Etiketin çevrilebilmesi için burada bir dil sabit adı (örn. MENUS_HOME) kullanılabilir.');
+- define('_AM_SYSTEM_MENUS_CATPREFIX', 'Önek (HTML)') eklendi;
+- define('_AM_SYSTEM_MENUS_CATPREFIX_DESC', 'Font Awesome simgesi gibi kategori başlığından önce gösterilen isteğe bağlı işaretleme eklendi.');
+- define('_AM_SYSTEM_MENUS_CATSUFFIX', 'Sonek (HTML)') eklendi;
+- define('_AM_SYSTEM_MENUS_CATSUFFIX_DESC', 'Kategori başlığından sonra gösterilen isteğe bağlı işaretleme.'); eklendi
+- define('_AM_SYSTEM_MENUS_CATURL', 'URL') eklendi;
+- define('_AM_SYSTEM_MENUS_CATURL_DESC', 'Kategorinin kendisi için bağlantı, örneğin "index.php" veya mutlak bir URL.'); eklendi
+- ​​define('_AM_SYSTEM_MENUS_CATTARGET', 'Bağlantı Hedefi') eklendi;
+- define('_AM_SYSTEM_MENUS_CATPOSITION', 'Konum'); eklendi
+- define('_AM_SYSTEM_MENUS_DELCAT_CONFIRM', '"%s" kategorisini ve tüm öğelerini silmek istediğinizden emin misiniz?');
+- define('_AM_SYSTEM_MENUS_ADDITEM', 'Öğe Ekle'); eklendi
+- define('_AM_SYSTEM_MENUS_EDITITEM', 'Öğeyi Düzenle'); eklendi
+- define('_AM_SYSTEM_MENUS_DELITEM', 'Öğeyi Sil'); eklendi
+- ​​define('_AM_SYSTEM_MENUS_ITEMTITLE', 'Öğe Başlığı') eklendi;
+- define('_AM_SYSTEM_MENUS_ITEMTITLE_DESC', 'Etiketin çevrilebilmesi için burada bir dil sabiti adı kullanılabilir.'); eklendi
+- define('_AM_SYSTEM_MENUS_ITEMPREFIX', 'Önek (HTML)') eklendi;
+- ​​define('_AM_SYSTEM_MENUS_ITEMPREFIX_DESC', 'Font Awesome simgesi gibi öğe başlığından önce gösterilen isteğe bağlı işaretleme eklendi.');
+- define('_AM_SYSTEM_MENUS_ITEMSUFFIX', 'Sonek (HTML)') eklendi;
+- define('_AM_SYSTEM_MENUS_ITEMSUFFIX_DESC', 'Öğe başlığından sonra gösterilen isteğe bağlı işaretleme eklendi. <{xoInboxCount}> yer tutucusunu destekler.');
+- define('_AM_SYSTEM_MENUS_ITEMURL', 'URL') eklendi;
+- define('_AM_SYSTEM_MENUS_ITEMTARGET', 'Bağlantı Hedefi') eklendi;
+- define('_AM_SYSTEM_MENUS_ITEMPOSITION', 'Konum'); eklendi
+- define('_AM_SYSTEM_MENUS_ITEMPARENT', 'Ana Öğe') eklendi;
+- define('_AM_SYSTEM_MENUS_ITEMCATEGORY', 'Kategori') eklendi;
+- ​​define('_AM_SYSTEM_MENUS_DELITEM_CONFIRM', '"%s" öğesini ve alt öğelerini silmek istediğinizden emin misiniz?');
+- define('_AM_SYSTEM_MENUS_TARGET_SELF', 'Aynı pencere') eklendi;
+- define('_AM_SYSTEM_MENUS_TARGET_BLANK', 'Yeni pencere') eklendi;
+- define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY', 'Bu kategoriyi görebilen gruplar'); eklendi
+- define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY_DESC', 'Öğelerden herhangi biri görünür hale gelmeden önce kullanıcıların kategori erişimine sahip olmaları gerekir.'); eklendi
+- define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM', 'Bu öğeyi görebilen gruplar'); eklendi
+- define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM_DESC', 'Öğe izinleri üst kategori izninden sonra kontrol edilir.'); eklendi
+- define('_AM_SYSTEM_MENUS_ERROR_CATNOTFOUND', 'Kategori bulunamadı'); eklendi
+- define('_AM_SYSTEM_MENUS_ERROR_CATPROTECTED', 'Korunan bir kategori silinemiyor'); eklendi
+- define('_AM_SYSTEM_MENUS_ERROR_CATINACTIVE', 'Etkinleştirilemiyor: kategori etkin değil'); eklendi
+- define('_AM_SYSTEM_MENUS_ERROR_ITEMNOTFOUND', 'Öğe bulunamadı'); eklendi
+- define('_AM_SYSTEM_MENUS_ERROR_ITEMPROTECTED', 'Korunan bir öğe silinemiyor'); eklendi
+- define('_AM_SYSTEM_MENUS_ERROR_ITEMPARENT', 'Geçersiz üst öğe seçildi'); eklendi
+- define('_AM_SYSTEM_MENUS_ERROR_ITEMCYCLE', 'Ebeveyn ayarlanamıyor: döngüsel bir referans oluşturur'); eklendi
+- define('_AM_SYSTEM_MENUS_ERROR_ITEMDEPTH', 'Maksimum yuvalama derinliği (3 seviye) aşıldı'); eklendi
+- define('_AM_SYSTEM_MENUS_ERROR_PARENTINACTIVE', 'Etkinleştirilemiyor: üst öğe etkin değil'); eklendi
+- define('_AM_SYSTEM_MENUS_ERROR_NOITEMS', 'Bu kategoride alt menü öğesi yok.'); eklendi
+- define('_AM_SYSTEM_MENUS_ERROR_ITEMEDIT', 'Düzenlemeden önce bu öğeyi etkinleştirin'); eklendi
+- define('_AM_SYSTEM_MENUS_ERROR_ITEMDISABLE', 'Silmeden önce bu öğeyi etkinleştirin'); eklendi
+- define('MENUS_HOME', 'Home') eklendi;
+- define('MENUS_ADMIN', 'Yönetim') eklendi;
+- define('MENUS_ACCOUNT', 'Hesap'); eklendi
+- define('MENUS_ACCOUNT_EDIT', 'Hesabı Düzenle'); eklendi
+- define('MENUS_ACCOUNT_LOGIN', 'Login') eklendi;
+- ​​define('MENUS_ACCOUNT_LOGOUT', 'Oturumu Kapat') eklendi;
+- define('MENUS_ACCOUNT_REGISTER', 'Kaydol'); eklendi
+- define('MENUS_ACCOUNT_MESSAGES', 'Mesajlar') eklendi;
+- define('MENUS_ACCOUNT_NOTIFICATIONS', 'Bildirimler') eklendi;
+- define('MENUS_ACCOUNT_TOOLBAR', 'Araç Çubuğu') eklendi;
+
+/htdocs/modules/system/constants.php
+- define('XOOPS_SYSTEM_MENUS', 19) eklendi;
+
+/htdocs/modules/system/language/english/blocks.php
+-added define('_MB_SYSTEM_WAITING_CONTENT_DEPRECATED', "'Bekleyen İçerikleri Engelle' XOOPS 2.5.11'den beri kullanımdan kaldırıldı, lütfen Bekleme modülünü kullanın");
+
+/htdocs/install/language/english/welcome.php
+- güncellenmiş PHP ve MySQL sürümleri
+
+/htdocs/modules/pm/language/english/main.php
+- güncellendi define('_MD_PM_EMAIL_DESC', 'Sayın %s, bu, ' . $GLOBALS['xoopsConfig']['sitename']); adresindeki hesabınızdan aktarılan bir mesajdır;
+- güncellendi define('_MD_PM_EMAIL_DESC', 'Sayın %s, bu, ' . $GLOBALS['xoopsConfig']['sitename']); adresindeki hesabınızdan aktarılan bir mesajdır.
+
+/htdocs/language/english/user.php
+- define('_US_SORRYNOTFOUND', 'Üzgünüz, karşılık gelen kullanıcı bilgisi bulunamadı.'); güncellendi
+- güncellenmiş define('_US_SORRYNOTFOUND', 'Bir hesap verilen bilgilerle eşleşirse isteğinizi işleme koyacağız. Kısa süre içinde e-posta almazsanız, lütfen spam klasörünüzü kontrol edin veya site yöneticisiyle iletişime geçin.');
+
+- define('_US_PWDMAILED', '%s şifresi gönderildi.'); güncellendi
+- güncellendi define('_US_PWDMAILED', 'Bu e-posta için bir hesap varsa, şifre sıfırlama talimatlarını alacaksınız. Gerekirse spam klasörünüzü kontrol edin veya site yöneticisiyle iletişime geçin.');
+
+- define('_US_CONFMAIL', '%s için onay e-postası gönderildi.'); güncellendi
+- define('_US_CONFMAIL', 'Bu e-posta için bir hesap mevcutsa, şifre sıfırlama talimatlarını alacaksınız. Gerekirse spam klasörünüzü kontrol edin veya site yöneticisiyle iletişime geçin.');
+
+/htdocs/class/xoopseditor/tinymce5/language/english.php
+- _XOOPS_EDITOR_TINYMCE_LANGUAGE5'in adı _XOOPS_EDITOR_TINYMCE5_LANGUAGE olarak değiştirildi
+
+/htdocs/modules/system/themes/transition/language/english/admin.php
+- _OXYGEN_Server_API'yi _OXYGEN_SERVER_API olarak yeniden adlandırdık
+
+/htdocs/modules/system/language/english/admin/preferences.php.
+- define('_MD_AM_SENDMAIL_NOT_FOUND', 'Sendmail ikili dosyası bulunamadı. Lütfen sunucu yapılandırmanızı kontrol edin.'); eklendi
+- define('_MD_AM_SENDMAIL_HELP_MISSING_BIN', 'Geçerli bir sendmail uyumlu ikili dosya bulunamadı. Bir MTA yükleyin (örn. Postfix, msmtp) veya Tercihler'de SMTP'ye geçin.');
+
+/htdocs/modules/system/language/english/admin/users.php
+- define('_AM_SYSTEM_USERS_UNKNOWN_GROUP', 'Bilinmeyen grup'); eklendi
+
+/htdocs/modules/system/language/english/comment.php
+- define('_CM_ADDCOMMENT', 'Yorum Ekle'); eklendi
+
+
+/htdocs/install/language/english/install.php
+- define('_WEBSITE_NAME', 'XOOPS Sitesi') eklendi;
+- define('_WEBSITE_SLOGAN', 'Sadece kullanın!'); eklendi
+- define('_WEBSITE_META_KEYWORDS', 'xoops, web uygulama çerçevesi, cms, içerik yönetim sistemi'); eklendi
+- define('_WEBSITE_FOOTER', "Powered by XOOPS © 2001-{X_YEAR} <a href='https://xoops.org' rel='external' title='XOOPS Projesi'>XOOPS Projesi</a>"); eklendi
+- define('_WEBSITE_COPYRIGHT', 'Telif Hakkı © 2001-{X_YEAR}'); eklendi
+- define('_WEBSITE_DESCRIPTION', 'XOOPS, PHP'de yazılmış dinamik, Nesne Yönelimli, açık kaynaklı bir portal komut dosyasıdır.');
+- define('_WEBSITE_CENSOR_REPLACE', 'OOPS'); eklendi
+
+
+================================
+2023/10/01: Sürüm 2.5.11-Son
+================================
+/language/english/uploader.php
+-added define('_ER_UP_MODE_NOT_CHANGED', 'Dosya yüklendi, ancak mod değiştirilemedi');
+
+================================
+2023/10/01: Sürüm 2.5.11-RC3
+================================
+
+DEĞİŞTİRİLEN DOSYALAR:
+yükseltme/dil/english/upgrade.php
+yükseltme/dil/english/smarty3.php
+
+htdocs/class/xoopseditor/tinymce/language/english.php
+- define('_FAILGETIMG', 'Resim alınamadı %s'); eklendi
+
+/htdocs/modules/system/language/english/modinfo.php
+- define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Geçici olarak devre dışı bırak'); eklendi
+- define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'Email') eklendi;
+- ​​define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Özel mesaj') eklendi;
+
+/htdocs/modules/system/language/english/admin/preferences.php
+- define('_MD_AM_DEFAULT_NOTIFICATION_METHOD', 'Varsayılan bildirim yöntemi') eklendi;
+- define('_MD_AM_DEFAULT_NOTIFICATION_METHOD_DESC', 'Yeni kullanıcılar için örneğin bir forumdan gelen bildirimlere abone olduklarında eklendi.');
+- tanım eklendi('_MD_AM_MODULEPREF',
+
+
+================================
+2023/03/19: Sürüm 2.5.11-RC1
+================================
+
+DEĞİŞTİRİLEN DOSYALAR:
+htdocs/language/english/global.php
+- define('_DB_QUERY_ERROR', 'Sorgu Başarısız Oldu! SQL: %s - Hata: '); eklendi
+- define('_PRINT', 'Print'); eklendi
+- define('_PDF', 'PDF') eklendi;
+- ​​define('_OFF', 'Off') eklendi;
+
+================================
+2021/09/02: Sürüm 2.5.11-Betalar
+================================
+
+DEĞİŞTİRİLEN DOSYALAR:
+htdocs/language/english/admin.php
+- define('_AD_WARNING_NO_XML', 'Bu işlev için PHP XML Uzantısı gereklidir.'); eklendi
+
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- define('_AM_ADMINSTATS_LAST_MONTH', 'Geçen Ay'); eklendi
+- define('_AM_ADMINSTATS_LAST_WEEK', 'Geçen Hafta') eklendi;
+- define('_AM_ADMINSTATS_LAST_DAY', 'Last Day') eklendi;
+- ​​define('_AM_ADMINSTATS_LAST_HOUR', 'Son Saat') eklendi;
+
+htdocs/language/english/global.php
+- define('_PRINT', 'Print'); eklendi
+- define('_PDF', 'PDF') eklendi;
+- ​​define('_OFF', 'Off') eklendi;
+- tanım değiştirildi('_ON', 'On'); //'açık'tan itibaren
+
+htdocs/language/english/global.php
+- ​​tanım değiştirildi('_SIZE', 'Size'); // yazı tipi boyutu
+- define('_FONT', 'Font'); değiştirildi // yazı tipi ailesi
+- tanım değiştirildi('_COLOR', 'Renk'); // yazı tipi rengi
+
+htdocs/install/language/english/install.php
+- define('ERR_COPY_CONFIG_FILE', 'Yapılandırma dosyası %s kopyalanamadı'); eklendi
+
+htdocs/install/language/english/welcome.php
+- önerilen PHP ve MySQL sürümleri değiştirildi, bağlantılar "https:" olarak değiştirildi
+
+htdocs/modules/system/language/english/admin/preferences.php
+- define('_MD_AM_SMTPHOSTDESC', 'Tek bir ana bilgisayar adı veya birden fazla noktalı virgülle ayrılmış ana bilgisayar adı değiştirildi.<br>Ayrıca bu biçimi kullanarak her ana bilgisayar için farklı bir bağlantı noktası belirtebilirsiniz: [ana bilgisayar adı:bağlantı noktası] (ör. "smtp1.example.com:25;smtp2.example.com").<br>Şifreleme türünü de belirtebilirsiniz, örneğin: (ör. "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").<br>Ana makineler sırayla denenecek.');
+
+htdocs/modules/system/language/english/help/blocksadmin.html
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- tanım değiştirildi('_AM_SYSTEM_MODULES_ADMIN', 'XOOPS Modül Yönetimi');
+
+YENİ DOSYALAR:
+htdocs/themes/xswatch4/language/english/main.php
+xswatch/language/english/main.php kopyası olarak başladı ve ardından:
+- define('THEME_TOOLBAR_DEBUGMODE', 'Hata Ayıklama Modu') eklendi;
+- define('THEME_TOOLBAR_THIS_MODULE', 'Bu Modül'); eklendi
+- define('THEME_PERMISSIONS_LEGEND', 'İzinler ve Açıklamalar'); eklendi
+- define('THEME_INBOX_ALERT', 'PM Alert') eklendi;
+- define('THEME_INBOX_LINK', 'Gelen Kutunuzu görüntülemek için burayı tıklayın!') eklendi
+- define('THEME_EVENT_DOWNLOADS', 'Etkinlik İndirmeleri') eklendi;
+- ​​define('THEME_FILE_NAME', 'Dosya'); eklendi
+- define('THEME_FILE_SIZE', 'Size'); eklendi
+- define('THEME_CONTROL_NEXT', 'Sonraki') eklendi;
+- define('THEME_CONTROL_PREVIOUS', 'Önceki') eklendi;
+
+htdocs/language/english/user.php
+- define('_US_DESCRIPTIONMIN', 'Gerekli minimum uzunluk: %s'); eklendi
+- define('_US_DESCRIPTIONMAX', 'Maksimum uzunluk: %s'); eklendi
+
+htdocs/modules/system/language/english/admin/mailusers.php
+- define('_AM_SYSTEM_MAILUSERS_MAILTAGS5', '{X_NAME} boşsa adı veya uname'i yazdıracak'); eklendi
+
+htdocs/modules/system/language/english/admin/images.php
+- define("_AM_SYSTEM_IMAGES_SCATDELNG","Bu kategori silinemiyor"); eklendi
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- ​​define('_AM_SYSTEM_MODULES_INSTALL_THISMODULE', 'Bu Modül Yöneticisi'); eklendi
+
+SİLİNMİŞ DOSYALAR:
+htdocs/modules/system/language/english/admin/users.php
+- silinmiş define('_AM_SYSTEM_USERS_MODIFYUSER', 'Kullanıcıyı Değiştir');
+- silinmiş define('_AM_SYSTEM_USERS_DELUSER', 'Kullanıcıyı Sil');
+- silinmiş define('_AM_SYSTEM_USERS_GO', 'Git!');
+
+================================
+2019/04/29: Sürüm 2.5.10 Sonu
+================================
+EKLENEN/SİLİNEN TANIMLAR:
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- define('_AM_LABEL_BAN_BY_IP', 'Kontrol edilen kayıtlardaki IP'leri yasakla:'); eklendi
+- define('_AM_BUTTON_BAN_BY_IP', 'IP Yasağı!') eklendi;
+- define('_AM_JS_BANCONFIRM', 'IP Yasaklamaları tamam mı?'); eklendi
+- define('_AM_MSG_BANNEDIP', 'IP'ler yasaklandı'); eklendi
+- define('_AM_ADMINSTATS_TITLE', 'Koruyucu Günlüğü Özeti') eklendi;
+
+htdocs/xoops_lib/modules/protector/language/english/modinfo.php
+- define($constpref . '_ADMINSTATS', 'Genel Bakış'); eklendi
+- ​​define($constpref . '_BANIP_TIME0DSC', 'Otomatik IP yasakları için saniye cinsinden askıya alma süresi'); eklendi
+
+htdocs/language/english/uploader.php
+- define('_ER_UP_INDEXNOTSET', 'Birden fazla dosya getirilmeye çalışıldı, indeks ayarlanmalı.'); eklendi
+
+htdocs/language/english/admin.php
+- define('_AD_WARNING_OLD_PHP', 'UYARI: PHP'nin daha yeni bir sürümüne yükseltmeyi düşünün. %s veya daha yeni bir sürüm önerilir ve gelecekteki XOOPS sürümlerinde gerekli olacaktır.');
+
+TANIMLAR DEĞİŞTİRİLDİ
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- define('_AM_TXT_HOWTOCHANGEDB',"Öneki değiştirmek istiyorsanız,<br> %s/data/secure.php dosyasını manuel olarak düzenleyin.<br><br>define('XOOPS_DB_PREFIX', '<b>%s</b>');");
+
+htdocs/install/english/welcome.php
+- önerilen PHP sürümü değiştirildi, SELinux için Özel Notlar bölümü eklendi
+
+/home/richard/sites/x258i/htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- in define of '_AM_MODULEADMIN_ADMIN_FOOTER', changed XOOPS links to 'https://xoops.org'
+
+YENİ DOSYALAR:
+yok
+
+===============================
+2017/08/01: Sürüm 2.5.9 Sonu
+===============================
+EKLENEN/SİLİNEN TANIMLAR
+
+htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- define('_AM_MODULEADMIN_ABOUT_AMOUNT', 'Tutar') eklendi;
+- define('_AM_MODULEADMIN_ABOUT_AMOUNT_TTL', 'Lütfen USD tutarını girin, örneğin 25,00 $'); eklendi
+- define('_AM_MODULEADMIN_ABOUT_AMOUNT_CURRENCY', 'USD') eklendi;
+- define('_AM_MODULEADMIN_ABOUT_AMOUNT_SUGGESTED', '25.00'); eklendi
+- define('_AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN', '\\$?[0-9]+(,[0-9]{3})*(\\.[0-9]{0,2})?$'); eklendi
+- define('_AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT', 'PayPal veya büyük bir kredi kartını kullanarak çevrimiçi bağış yapın!'); eklendi
+
+htdocs/install/language/english/install.php
+*NOT* Yükleyici önemli ölçüde değiştirildi, bu nedenle bu dosyanın yakından incelenmesi gerekiyor
+- define("CURL_HTTP", "İstemci URL Kitaplığı (cURL)"); eklendi
+- define('XOOPS_COOKIE_DOMAIN_LABEL', 'Web Sitesi için Çerez Etki Alanı') eklendi;
+- define('XOOPS_COOKIE_DOMAIN_HELP', 'Çerezleri ayarlamak için alan adı eklendi. Boş olabilir, URL'deki tam ana bilgisayar (www.example.com) veya alt alan adları arasında paylaşmak için alt alan adları olmayan kayıtlı alan adı (example.com) (www.example.com ve blog.example.com.)');
+- define('INTL_SUPPORT', 'Uluslararasılaştırma işlevleri') eklendi;
+- define('XOOPS_SOURCE_CODE', "GitHub'da XOOPS"); eklendi
+- define('XOOPS_INSTALLING', 'Yükleniyor'); eklendi
+- define('XOOPS_ERROR_ENCOUNTERED', 'Hata') eklendi;
+- define('XOOPS_ERROR_SEE_BELOW', 'Mesajlar için aşağıya bakın.'); eklendi
+- ​​define('MODULES_AVAILABLE', 'Mevcut Modüller') eklendi;
+- define('INSTALL_THIS_MODULE', '%s Ekle'); eklendi
+
+htdocs/install/language/english/finish.php
+- yeni kullanıcıları modüller ve temalar hakkında bilgi almak için xoops.org'a yönlendirecek şekilde değişiklik yapın
+
+htdocs/language/english/global.php
+- define('_UPLOAD', 'Upload'); eklendi
+- define('_SELECTFILES', 'Dosyaları seç'); eklendi
+- define('_DROPFILESHERE', 'Dosyaları buraya bırakın'); eklendi
+- define('_RETRY', 'Yeniden Dene'); eklendi
+- define('_OK', 'OK') eklendi;
+- define('_FORMATPROGRESS', '{percent}% of {total_size}'); eklendi
+- ​​define('_FAILUPLOAD', 'Yükleme başarısız oldu!'); eklendi
+- define('_WAITINGFORRESPONSE', 'İşleniyor...'); eklendi
+- define('_PAUSED', 'Duraklatıldı'); eklendi
+- define('_PROCESSINGDROPPEDFILES', 'Bırakılan dosyalar işleniyor...'); eklendi
+- define('_TYPEERROR', '{file}'nin geçersiz bir uzantısı var. Geçerli uzantılar: {extensions}!' eklendi;
+- define('_SIZEERROR', '{file} çok büyük, maksimum dosya boyutu {sizeLimit}!' eklendi!');
+- define('_MINSIZEERROR', '{file} çok küçük, minimum dosya boyutu {minSizeLimit}!' eklendi!');
+- define('_EMPTYERROR', '{file} boş, lütfen dosyaları onsuz tekrar seçin!'); eklendi
+- ​​define('_NOFILESERROR', 'Yüklenecek dosya yok!'); eklendi
+- define('_TOOMANYITEMSERROR', 'Çok fazla öğe ({netItems}) yüklenecek. Öğe sınırı: {itemLimit}!' eklendi!');
+- define('_MAXHEIGHTIMAGEERROR', 'Resim çok uzun!'); eklendi
+- define('_MAXWIDTHIMAGEERROR', 'Resim çok geniş!') eklendi;
+- define('_MINHEIGHTIMAGEERROR', 'Resim yeterince uzun değil!'); eklendi
+- define('_MINWIDTHIMAGEERROR', 'Resim yeterince geniş değil!'); eklendi
+- define('_RETRYFAILTOOMANYITEMS', 'Yeniden deneme başarısız oldu - dosya sınırınıza ulaştınız!'); eklendi
+- ​​define('_ONLEAVE', 'Dosyalar yükleniyor, şimdi ayrılırsanız yükleme iptal edilecektir!');
+- define('_UNSUPPORTEDBROWSERIOS8SAFARI', 'Kurtarılamaz hata - bu tarayıcı, iOS8 Safari'deki ciddi hatalar nedeniyle herhangi bir türde dosya yüklemeye izin vermiyor. Apple bu sorunları çözene kadar lütfen iOS8 Chrome'u kullanın!');
+
+htdocs/language/english/uploader.php
+- define('_ER_UP_INISIZE', 'Yüklenen dosya php.ini'deki upload_max_filesize yönergesini aşıyor'); eklendi
+- define('_ER_UP_FORMSIZE', 'Yüklenen dosya, HTML formunda belirtilen MAX_FILE_SIZE yönergesini aşıyor'); eklendi
+- define('_ER_UP_PARTIAL', 'Yüklenen dosyanın yalnızca bir kısmı yüklendi'); eklendi
+- define('_ER_UP_NOFILE', 'Hiçbir dosya yüklenmedi'); eklendi
+- define('_ER_UP_NOTMPDIR', 'Geçici bir klasör eksik'); eklendi
+- define('_ER_UP_CANTWRITE', 'Dosya diske yazılamadı'); eklendi
+- define('_ER_UP_EXTENSION', 'Dosya yükleme uzantı tarafından durduruldu. Phpinfo'yu görüntüle()'); eklendi
+- define('_ER_UP_UNKNOWN', 'Bilinmeyen yükleme hatası'); eklendi
+
+htdocs/language/english/user.php
+- ​​silindi define('_US_USECOOKIE', 'Kullanıcı adımı 1 yıl boyunca bir çerezde sakla');
+
+htdocs/modules/profile/language/english/admin.php
+- define('_PROFILE_AM_CANNOTDEACTIVATEWEBMASTERS', 'Web Yöneticisi hesabını devre dışı bırakamazsınız'); eklendi
+
+htdocs/modules/system/language/english/admin/comments.php
+- define('_MP_DELETECOUNT', 'Gruptaki üye sayısı çok büyük ( > 4.000) '); eklendi
+
+htdocs/modules/system/language/english/admin/userrank.php
+- define('_AM_SYSTEM_USERRANK_ERROR', 'Hatalar') eklendi;
+
+yükseltme/dil/english/upgrade.php
+- define('_LANGUAGE', 'Language'); eklendi
+- define('_SUPPORT', 'Support'); eklendi
+- define('_XOOPS_SOURCE_CODE', 'GitHub'da XOOPS'); eklendi
+- define('_PATCH_COUNT', 'Yama Setleri') eklendi;
+- define('_USERNAME_PLACEHOLDER', 'Kullanıcı Adınız'); eklendi
+- define('_PASSWORD_PLACEHOLDER', 'Şifreniz'); eklendi
+- define('_CONTINUE', 'Devam') eklendi;
+- define('XOOPS_ERROR_ENCOUNTERED', 'Hata') eklendi;
+- define('XOOPS_ERROR_SEE_BELOW', 'Mesajlar için aşağıya bakın.'); eklendi
+
+htdocs/themes/xbootstrap/language/english/main.php
+- define("THEME_USER_WELCOME", "Hoş Geldiniz"); eklendi
+
+YENİ DOSYALAR:
+- htdocs/modules/system/themes/transition/language/english/admin.php
+- htdocs/modules/system/themes/transition/language/english/localsupport.php
+
+- yükseltme/dil/ingilizce/
+*NOT* Yükseltme kodu önemli ölçüde değiştirildi, dolayısıyla bu dosyalar yakından incelenmelidir
+- yama başına dil dosyalarının tümü yama dizinlerinden yükseltme/dil/* dizinine taşındı
+  yani yükseltme/upd-2.0.18-to-2.3.0/language/english.php oldu
+  yükseltme/dil/english/upd-2.0.18-to-2.3.0.php
+
+- yükseltme/dil/english/support.php (htdocs/install/language/english/support.php ile aynı)
+- yükseltme/dil/english/welcome.php
+
+===============================
+2016/05/27: Sürüm 2.5.8
+===============================
+EKLENEN/SİLİNEN TANIMLAR
+
+/install/language/english/install.php
+/modules/system/language/english/admin/modulesadmin.php
+- define('_AM_SYSTEM_MODULES_INSTALL_MORE',"Daha fazla modül yükle"); eklendi
+
+/modules/system/language/english/admin/users.php
+define('_AM_SYSTEM_USERS_ACTIVATE', 'Kullanıcıyı Etkinleştir');
+
+/modules/system/language/english/blocks.php
+define('_MB_SYSTEM_BLOCK_HEIGHT',"Blok Yüksekliği (satırlar)");
+
+kurulum/dil/english/install.php
+define('CHMOD_CHGRP_REPEAT', 'Yeniden Dene');
+define('CHMOD_CHGRP_IGNORE', 'Yine de Kullan');
+define('CHMOD_CHGRP_ERROR', 'Yükleyici, %1$s yapılandırma dosyasını yazamayabilir.<p>PHP, dosyaları %2$s kullanıcısı ve %3$s grubu altına yazıyor.<p>Durum
+
+TANIMLAR DEĞİŞTİRİLDİ
+xoops_lib/modules/protector/language/english/modinfo.php
+define($constpref . '_HIJACK_TOPBITDSC', ...
+
+/modules/system/themes/default/language/english/admin.php
+define('_OXYGEN_CODESVN', 'Kod Havuzu');
+
+kurulum/dil/english/install.php
+define('SAVED_MAINFILE', 'Ayarlar kaydedildi');
+define('ERR_NEED_WRITE_ACCESS', 'Sunucuya aşağıdaki dosya ve klasörlere yazma erişimi verilmelidir<br />(ör. UNIX/LINUX sunucusunda <em>chmod 775 dizin_adı</em>)<br />Bunlar mevcut değilse veya doğru şekilde oluşturulmamışsa, lütfen manuel olarak oluşturun ve uygun izinleri ayarlayın.');
+Kimlik doğrulama için normal Xoops kullanıcılarına alternatif olarak
+define('ERR_COPY_MAINFILE', 'Dağıtım dosyası %s dizinine kopyalanamadı');
+define('ERR_WRITE_MAINFILE', '%s içine yazılamadı. Lütfen dosya iznini kontrol edin ve tekrar deneyin.');
+define('ERR_READ_MAINFILE', '%s okuma için açılamadı');
+
+/modules/system/themes/zetadigme/language/english/admin.php
+define('_MD_CODESVN', 'Kod Havuzu');
+
+YENİ DOSYALAR:
+/language/english/stopwords.php
+/language/english/xmf.php
+
+GÜNCELLENMİŞ XoopsMailerLocal sınıfı örneği:
+htdocs/language/english/xoopsmailerlocal.php
+
+===============================
+2014/06/14: Sürüm 2.5.7 Sonu
+===============================
+EKLENEN/SİLİNEN TANIMLAR
+
+/install/language/english/install.php
+- define('WRITTEN_LICENSE',"Written XOOPS %s Lisans Anahtarı: <strong>%s</strong>"); eklendi
+
+===============================
+2014/03/18: Sürüm 2.5.7 RC1
+===============================
+EKLENEN/SİLİNEN TANIMLAR
+
+/modules/system/language/english/admin.php
+- define('_AM_SYSTEM_USAGE',"Kullanım"); eklendi
+- define('_AM_SYSTEM_ACTIVE',"Aktif"); eklendi
+
+
+===============================
+2012/04/15: Sürüm 2.5.5
+===============================
+EKLENEN/SİLİNEN TANIMLAR
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- define("_AM_MODULEADMIN_HOME", "Home"); eklendi
+- define("_AM_MODULEADMIN_DASHBOARD", "Gösterge Paneli"); eklendi
+- define("_AM_MODULEADMIN_ABOUT", "Hakkında"); eklendi
+- define("_AM_MODULEADMIN_PERMISSIONS", "İzinler"); eklendi
+- define("_AM_MODULEADMIN_ABOUT_RELEASEDATE","Yayınlandı: "); eklendi
+- define("_AM_MODULEADMIN_ABOUT_AUTHOR","Yazar: "); eklendi
+- define("_AM_MODULEADMIN_ABOUT_CREDITS","Krediler: "); eklendi
+- define("_AM_MODULEADMIN_ABOUT_LICENSE","License: "); eklendi
+- define("_AM_MODULEADMIN_ABOUT_AUTHOR_NAME","Yazar adı: "); eklendi
+- define("_AM_MODULEADMIN_ABOUT_AUTHOR_INFO","Yazar Bilgisi"); eklendi
+- added define("_AM_MODULEADMIN_ADMIN_FOOTER", "<div class='center Smallsmall italic pad5'>Bu modül <a class='tooltip' rel='external' href='http://xoops.org/' title='XOOPS Topluluğunu Ziyaret Edin'>XOOPS Topluluğu</a></div> tarafından korunur</a></div>");
+
+/language/english/calendar.php
+- define("_CAL_FORMAT","Y-m-d"); eklendi
+
+/xoops_lib/modules/protector/language/english/modinfo.php
+
+- define($constpref."_ADMINHOME","Home"); eklendi
+- define($constpref."_ADMINABOUT","Hakkında"); eklendi
+- define($constpref.'_STOPFORUMSPAM_ACTION','Forum Spamını Durdur'); eklendi
+- define($constpref.'_STOPFORUMSPAM_ACTIONDSC','POST verilerini www.stopforumspam.com veritabanında kayıtlı spam göndericilere karşı kontrol eder. Php CURL lib gerektirir.'); eklendi.
+
+
+/install/language/english/install.php
+- define( "FILTER_FUNCTIONS", "Filtre fonksiyonları"); eklendi
+
+/language/english/global.php
+- define('_DBDATESTRING', 'Y-m-d'); eklendi
+- define('_DBTIMETRING', 'H:i:s') eklendi;
+- define('_DBTIMESTAMPSTRING', 'Y-m-d H:i:s') eklendi;
+
+/language/english/pmsg.php
+- define('_MD_PM_READ', 'Zaten Okundu'); eklendi
+
+/modules/system/language/english/admin.php
+- define("_AM_SYSTEM_UNINSTALL","Kaldır"); eklendi
+
+AYRICA BAKINIZ:
+/modules/profile/docs/lang_diff.txt
+
+===============================
+2011/11/17: Sürüm 2.5.4
+===============================
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+_AM_MODULEADMIN_CONFIG_DB
+_AM_MODULEADMIN_CONFIG_ADMIN
+
+===============================
+2011/10/10: Sürüm 2.5.4 RC
+===============================
+
+YENİ DOSYALAR:
+modüller/pm/language/english/help/help.html
+modüller/profil/dil/english/help/help.html
+modüller/koruyucu/dil/english/help/help.html
+
+EKLENEN/SİLİNEN TANIMLAR
+
+/language/english/pmsg.php
+delete define('_MD_PM_READ', 'Zaten Okundu');
+
+/language/english/user.php
+- define('_US_SKYPE', 'Skype'); eklendi
+- define('_US_FACEBOOK', 'Facebook'); eklendi
+
+/modules/pm/language/english/main.php
+- silindi define("_MD_PM_RECEIVE","RECEIVE");
+- silinmiş define("_MD_PM_POST","POST");
+- silinmiş define("_MD_PM_READBOX", "READBOX");
+- silinmiş define("_MD_PM_RSAVEBOX","Receive_SAVEBOX");
+- silinmiş define("_MD_PM_SENTBOX","SENTBOX");
+- silinmiş define("_MD_PM_PSAVEBOX","Post_SAVEBOX");
+- silindi define("_MD_PM_SAVED","Başarıyla Kaydedildi");
+- silindi define("_MD_PM_TOC","Kimden: ");
+- silindi define("_MD_PM_UID","Gönderenin Kimliği");
+
+/language/english/findusers.php
+- define('_MA_USER_FACEBOOK', 'Facebook Bağlantısı') eklendi; //YAPILACAK
+- tanımlama eklendi('_MA_USER_SKYPE', 'Skype Bağlantısı');// YAPILACAKLAR
+
+/modules/pm/language/english/modinfo.php
+- define("_MI_PM_ABOUT", "Hakkında"); eklendi
+
+/modules/profile/language/english/admin.php
+- define('_PROFILE_AM_ACTION', 'Action'); eklendi
+
+/modules/profile/language/english/modinfo.php
+- define("_PROFILE_MI_ABOUT", "Hakkında"); eklendi
+- define("_PROFILE_MI_HOME", "Home"); eklendi
+
+
+/modules/system/language/english/admin/preferences.php
+- silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_GENERAL","Genel Ayarlar");
+- silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_USERSETTINGS","Kullanıcı Bilgi Ayarları");
+- silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_METAFOOTER","Meta Etiketler ve Altbilgi");
+- silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_CENSOR","Kelime Sansürleme Seçenekleri");
+- silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_SEARCH","Arama Seçenekleri");
+- ​​silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_MAILER","E-posta Kurulumu");
+- define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_AUTHENTICATION","Kimlik Doğrulama Seçenekleri");*/ silindi
+- silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_GENERAL", "A faire");
+- silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_USERSETTINGS""A, faire");
+- silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_METAFOOTER","Afiyet olsun");
+- silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_CENSOR","Affedere");
+- silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_SEARCH","Afiyet olsun");
+- silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_MAILER","Afiyet olsun");
+- silinmiş define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_AUTHENTICATION", "A faire");
+- define("_MD_AM_LOADINGIMG", "Yükleniyor... resim görüntülensin mi?"); silindi
+- silindi define("_MD_AM_CHNGUTHEME", "Tüm kullanıcıların temasını değiştir");
+
+/modules/system/language/english/admin/users.php
+- define("_AM_SYSTEM_USERS_ACCEPT_EMAIL","Yöneticiden gelen e-postayı kabul et"); eklendi
+
+- silinmiş define("_AM_SYSTEM_USERS_NAV_MANAGER","Kullanıcı Yöneticisi");
+- silinmiş define("_AM_SYSTEM_USERS_USERPOST","Kullanıcı Mesajları");
+- silinmiş define("_AM_SYSTEM_USERS_STORIES","Hikayeler");
+- silinmiş define("_AM_SYSTEM_USERS_COMMENTS","Yorumlar");
+- silinmiş define("_AM_SYSTEM_USERS_PTBBTSDIYT","Yukarıdaki kullanıcı gönderileri bilgilerinin gerçek durumu göstermediğini düşünüyorsanız verileri senkronize etmek için aşağıdaki düğmeye basın");
+- define("_AM_SYSTEM_USERS_CNGTCOM", "Yorumların tamamı alınamadı"); silindi
+- define("_AM_SYSTEM_USERS_CNGTST","Tüm hikayeler alınamadı"); silindi
+- silinmiş define("_AM_SYSTEM_USERS_LIST","List");
+- silinmiş define("_AM_SYSTEM_USERS_USERPOST","Kullanıcı Mesajları");
+- silinmiş define("_AM_SYSTEM_USERS_STORIES","Hikayeler");
+- silinmiş define("_AM_SYSTEM_USERS_COMMENTS","Yorumlar");
+- silinmiş define("_AM_SYSTEM_USERS_PTBBTSDIYT","Yukarıdaki kullanıcı gönderileri bilgilerinin gerçek durumu göstermediğini düşünüyorsanız verileri senkronize etmek için aşağıdaki düğmeye basın");
+- define("_AM_SYSTEM_USERS_CNGTCOM", "Tüm yorumlar alınamadı"); silindi
+- define("_AM_SYSTEM_USERS_CNGTST","Tüm hikayeler alınamadı"); silindi
+- silinmiş define("_AM_SYSTEM_USERS_LIST","List");
+
+xoops_lib/modules/protector/language/english/admin.php
+- define("_AM_ADV_REGISTERGLOBALS2",") eklendi ve içine aşağıdaki satırı yerleştirin:");
+
+DEĞİŞTİRİLEN DOSYALAR:
+
+/modules/system/language/english/admin/users.php (Mamba)/
+/language/english/mail_template/activated.tpl
+/language/english/mail_template/adminactivate.tpl
+/language/english/mail_template/lostpass1.tpl
+/language/english/mail_template/lostpass2.tpl
+/language/english/mail_template/register.tpl
+/language/english/mail_template/welcome.tpl
+/modules/system/language/english/admin/avatars.php
+/modules/system/language/english/admin/banners.php
+/modules/system/language/english/admin/blocksadmin.php
+/modules/system/language/english/admin/comments.php
+/modules/system/language/english/admin/preferences.php
+/modules/system/language/english/admin/userrank.php
+/modules/system/language/english/admin/users.php
+/modules/system/language/english/help/mailusers.html
+/modules/system/language/english/help/preferences.html
+/modules/system/language/english/admin.php
+/modules/system/language/english/blocks.php
+/modules/system/language/english/modinfo.php
+/modules/system/themes/default/language/english/admin.php
+/modules/system/themes/zetadigme/language/english/admin.php
+/themes/suico/language/english/main.php
+/themes/zetagenesis/language/english/main.php
+
+
+===============================
+2011/10/05: Sürüm 2.5.4 Beta
+===============================
+- birkaç İngilizce çeviri güncellendi (DCrussader/Mamba)
+- dil/english/calendar.php silindi _CAL_DEF_DATE_FORMAT
+- dil/english/calendar.php silindi _CAL_TT_DATE_FORMAT
+- silinmiş modüller/sistem/dil/english/admin/users.php _AM_SYSTEM_USERS_NAV_MANAGER
+- silinmiş modüller/sistem/dil/english/admin/preferences.php _MD_AM_LOADINGIMG
+- silinmiş modüller/sistem/dil/english/admin/preferences.php _MD_AM_CHNGUTHEME
+- silinen modüller/pm/language/english/admin/main.php _MD_PM_RECEIVE, _MD_PM_POST, _MD_PM_READBOX, _MD_PM_RSAVEBOX, _MD_PM_SENTBOX, _MD_PM_PSAVEBOX, _MD_PM_SAVED, _MD_PM_TOC
+- eklendi /modules/profile/language/english/admin.php _PROFILE_AM_ACTION
+- eklendi /modules/profile/language/english/main.php _PROFILE_MI_ABOUT
+- eklendi /modules/profile/language/english/main.php _PROFILE_MI_HOME
+- eklendi /modules/pm/language/english/modinfo.php _MI_PM_ABOUT
+- eklenen modüller/sistem/dil/english/admin/users.php _AM_SYSTEM_USERS_FACEBOOK, _AM_SYSTEM_USERS_SKYPE
+- eklenen dil/english/user.php _US_SKYPE, _US_FACEBOOK
+
+xoops_lib/modules/protector/language/english/modinfo.php
+- define($constpref.'_STOPFORUMSPAM_ACTION','Forum Spamını Durdur'); eklendi
+- define($constpref.'_STOPFORUMSPAM_ACTIONDSC','POST verilerini www.stopforumspam.com veritabanında kayıtlı spam göndericilere karşı kontrol eder. Php CURL lib gerektirir.'); eklendi.
+
+
+
+===============================
+2011/09/06: Sürüm 2.5.2 RC
+===============================
+ - eklenen dil/english/misc.php _MSC_CLICK_TO_OPEN_IMAGE, _MSC_RESIZED_IMAGE, _MSC_ORIGINAL_IMAGE
+ - eklenen dil/english/pmsg.php _MD_PM_SURE_TO_DELETE, _MD_PM_READ
+ - eklenen modüller/pm/language/english/admin/main.php _MD_PM_READ, _MD_PM_SUBJECT_ICONS
+ - modüller\sistem/dil/english/admin/tplsets.php _AM_SYSTEM_TEMPLATES_SET
+ - kaldırılan modüller/sistem/temalar/varsayılan/dil/english/admin/admin.php _OXYGEN_XOOPSENGINE
+ - kaldırılan modüller/sistem/dil/english/admin/blocksadmin.php _AM_SYSTEM_BLOCKS_SAVE
+ - eklenen dil/english/calendar.php _CAL_DEF_DATE_FORMAT
+ - eklenen dil/english/calendar.php _CAL_TT_DATE_FORMAT
+
+===============================
+2011/03/15: Sürüm 2.5.1 RC
+===============================
+
+Eklenen Dil sabitleri:
+  modüller/sistem/dil/english/admin/images.php _AM_SYSTEM_IMAGES_URL
+  modüller/sistem/temalar/varsayılan/dil/english/admin/admin.php _OXYGEN_XOOPSENGINE
+
+Değiştirilmiş Dil sabitleri:
+  modüller/sistem/temalar/varsayılan/dil/english/admin/admin.php _OXYGEN_ABOUT_TEXT, _OXYGEN_WEBSITE
+  modüller/sistem/dil/english/helper/help_center.html, modülleradmin.html
+
+Kaldırılan Dil sabitleri:
+  modüller/sistem/temalar/varsayılan/dil/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_SOURCEFORGE_TEXT, _OXYGEN_POWERED_BY
+  modüller/sistem/temalar/varsayılan/dil/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSE, _OXYGEN_SOURCEFORGE_TEXT, _OXYGEN_POWERED_BY
