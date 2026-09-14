@@ -1,0 +1,85 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    tr
+ * _CHARSET     UTF-8
+ */
+define('_MI_SYSTEM_NAME', 'Sistem');
+define('_MI_SYSTEM_DESC', 'Sitenin çekirdek ayarlarının yönetimi için.');
+define('_MI_SYSTEM_BNAME2', 'Kullanıcı Menüsü');
+define('_MI_SYSTEM_BNAME3', 'Giriş');
+define('_MI_SYSTEM_BNAME4', 'Ara');
+define('_MI_SYSTEM_BNAME5', 'Bekleyen İçerikler');
+define('_MI_SYSTEM_BNAME6', 'Ana Menü');
+define('_MI_SYSTEM_BNAME7', 'Site Bilgisi');
+define('_MI_SYSTEM_BNAME8', 'Çevrimiçi Olanlar');
+define('_MI_SYSTEM_BNAME9', 'En Çok Mesaj Gönderenler');
+define('_MI_SYSTEM_BNAME10', 'Yeni Üyeler');
+define('_MI_SYSTEM_BNAME11', 'Son Yorumlar');
+define('_MI_SYSTEM_BNAME12', 'Bildirim Seçenekleri');
+define('_MI_SYSTEM_BNAME13', 'Temalar');
+define('_MI_SYSTEM_ADMENU1', 'Afişler');
+define('_MI_SYSTEM_ADMENU2', 'Bloklar');
+define('_MI_SYSTEM_ADMENU3', 'Gruplar');
+define('_MI_SYSTEM_ADMENU5', 'Modüller');
+define('_MI_SYSTEM_ADMENU6', 'Tercihler');
+define('_MI_SYSTEM_ADMENU7', 'İfadeler');
+define('_MI_SYSTEM_ADMENU9', 'Kullanıcı Rütbeleri');
+define('_MI_SYSTEM_ADMENU10', 'Kullanıcıyı Düzenle');
+define('_MI_SYSTEM_ADMENU11', 'Kullanıcılara E-posta Gönder');
+define('_MI_SYSTEM_ADMENU12', 'Kullanıcı Bul');
+define('_MI_SYSTEM_ADMENU13', 'Resimler');
+define('_MI_SYSTEM_ADMENU14', 'Avatarlar');
+define('_MI_SYSTEM_ADMENU15', 'Şablonlar');
+define('_MI_SYSTEM_ADMENU16', 'Yorumlar');
+define('_MI_SYSTEM_PREFERENCE_BREAK_GENERAL', 'Genel Ayarlar');
+define('_MI_SYSTEM_PREFERENCE_TIPS', 'Çevrimiçi yardım ister misiniz?');
+define('_MI_SYSTEM_PREFERENCE_TIPS_DSC', 'Bu size ipuçları ve çevrimiçi yardım sağlar');
+define('_MI_SYSTEM_PREFERENCE_ICONS', 'Simgeler');
+define('_MI_SYSTEM_PREFERENCE_BREADCRUMB', 'Ekmek kırıntısı');
+define('_MI_SYSTEM_PREFERENCE_BREAK_ACTIVE', 'Aktif Bölüm');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_AVATARS', 'Aktif Avatarlar');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BANNERS', 'Aktif Afişler');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_BLOCKSADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_COMMENTS', 'Aktif Yorumlar');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_FILEMANAGER', 'Aktif Dosya Yöneticisi');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_GROUPS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_IMAGES', 'Aktif Görüntü Yöneticisi');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAILUSERS', 'Aktif E-posta Kullanıcıları');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MODULESADMIN', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_PREFERENCES', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_SMILIES', 'Aktif Gülen Yüzler');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_TPLSETS', '');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERRANK', 'Aktif Kullanıcı Sıralamaları');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_USERS', 'Aktif Kullanıcılar');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_MAINTENANCE', 'Aktif Bakım');
+define('_MI_SYSTEM_PREFERENCE_BREAK_PAGER', 'Yönetimde görüntülenecek satır sayısı');
+define('_MI_SYSTEM_PREFERENCE_AVATARS_PAGER', 'Sayfa başına görüntülenecek avatar sayısı');
+define('_MI_SYSTEM_PREFERENCE_BANNERS_PAGER', 'Sayfa başına görüntülenecek banner sayısı');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_PAGER', 'Sayfa başına görüntülenecek yorum sayısı');
+define('_MI_SYSTEM_PREFERENCE_GROUPS_PAGER', 'Sayfa başına görüntülenecek grup sayısı');
+define('_MI_SYSTEM_PREFERENCE_IMAGES_PAGER', 'Sayfa başına görüntülenecek resim sayısı');
+define('_MI_SYSTEM_PREFERENCE_SMILIES_PAGER', 'Sayfa başına görüntülenecek ifade sayısı');
+define('_MI_SYSTEM_PREFERENCE_USERRANKS_PAGER', 'Sayfa başına görüntülenecek sıralama sayısı');
+define('_MI_SYSTEM_PREFERENCE_USERS_PAGER', 'Sayfa başına görüntülenecek kullanıcı sayısı');
+define('_MI_SYSTEM_PREFERENCE_BREAK_EDITOR', 'Düzenleyici Ayarları');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR', 'Bloklar için Editör:');
+define('_MI_SYSTEM_PREFERENCE_BLOCKS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR', 'Yorumlar için Editör:');
+define('_MI_SYSTEM_PREFERENCE_COMMENTS_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR', 'Tüm Modüller için Editör:');
+define('_MI_SYSTEM_PREFERENCE_GENERAL_EDITOR_DSC', '');
+define('_MI_SYSTEM_PREFERENCE_ANONPOST', '');
+define('_MI_SYSTEM_PREFERENCE_REDIRECT', '');
+define('_MI_SYSTEM_PREFERENCE_JQUERY_THEME', 'jQuery teması');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Geçici Olarak Devre Dışı Bırak');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'E-posta');
+define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Özel Mesaj');
+define('_MI_SYSTEM_MENUS_ACTIVE', 'Menü Sistemini Etkinleştir');
+define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Sitede gezinme için yerleşik menü yönetim sistemini etkinleştirin');
+
+//2.8.0
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_LANGUAGES', 'Dil yönetimini etkinleştir');
+define('_MI_SYSTEM_PREFERENCE_ACTIVE_LANGUAGES_DESC', 'Yerel ayar kaydını, dil paketlerini, durum denetimlerini ve site çeviri geçersiz kılmalarını yönetin.');
+define('_MI_SYSTEM_BNAME14', 'Dil Değiştirici');

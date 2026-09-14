@@ -1,0 +1,135 @@
+html KAMU "-//W3C//DTD HTML 4.01 Transitional//EN"
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>XOOPS Kurulum Talimatları</title>
+<meta content="XOOPS" name="keywords"/>
+<meta content="XOOPS installation guide" name="description"/>
+<style type="text/css">
+        body {
+            font-family:                        Lucida Grande, Verdana, Geneva, Sans-serif;
+            margin:                             0;
+            padding:                            0;
+            font-size:                          13px;
+            color:                              #333;
+            background-color:                   #fff;
+        }
+
+        a {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+            font-weight:                        normal;
+        }
+
+        a:visited {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+        }
+
+        a:hover {
+            color:                              #3D9DD3;
+            text-decoration:                    none;
+            background-color:                   transparent;
+        }
+
+        .page {
+            background-color:                   #fff;
+            margin:                             10px 30px 0;
+            padding:                            0;
+        }
+
+        .page h1 {
+            background-color:                   transparent;
+            border-bottom:                      1px solid #999;
+            color:                              #000;
+            font-size:                          18px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h2 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          16px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h3 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          14px;
+            font-weight:                        bold;
+        }
+
+        .page ul {
+            margin:                             20px 0 15px 0;
+        }
+
+        .page li {
+            margin-bottom:                      9px;
+        }
+
+        .page li p {
+            margin-left:                        0;
+            margin-right:                       0;
+        }
+
+        p {    }
+
+    </style>
+</head>
+<body>
+<div class="page">
+<h1>XOOPS yükleniyor</h1>
+<h2>İlk kurulum</h2>
+<h3>Önsöz:</h3>
+<p>
+<abbr title="eXtensible Object-Oriented Portal System">XOOPS</abbr> açık kaynaklıdır
+        PHP ile yazılmış Nesneye Dayalı Web yayınlama sistemi. için ideal bir araçtır.
+        küçükten büyüğe dinamik topluluk web siteleri, şirket içi portallar, kurumsal portallar, web günlükleri ve çok daha fazlasını geliştirmek.
+    </p>
+<p>
+        XOOPS, şu koşullar altında yayınlandı:
+        <a href="https://www.gnu.org/licenses/gpl-2.0.html" rel="external">GNU Genel Kamu Lisansı (GPL)</a>
+        sürüm 2 veya üstüdür ve kullanımı ve değiştirilmesi ücretsizdir.
+        GPL'nin dağıtım koşullarına uyduğunuz sürece yeniden dağıtmak ücretsizdir.
+    </p>
+<h2>Gereksinimler</h2>
+<ul>
+<li>WWW Sunucusu (<a href="http://www.apache.org/" rel="external">Apache</a>, <a href="https://www.nginx.com/" rel="external" s="">NGINX</a>, IIS, vb.)</li>
+<li><a href="https://www.php.net/" rel="external">PHP</a> 8.2 veya üzeri, 8.4+ önerilir</li>
+<li><a href="https://www.mysql.com/" rel="external">MySQL</a> 5.7 .8 veya üstü, MySQL 8.4.5+ önerilir</li>
+</ul>
+<h3>Yüklemeden önce</h3>
+<ol>
+<li>WWW sunucusunu, PHP'yi ve veritabanı sunucusunu doğru şekilde kurun.</li>
+<li>XOOPS siteniz için bir veritabanı hazırlayın.</li>
+<li>Kullanıcı hesabını hazırlayın ve kullanıcıya veritabanına erişim izni verin.</li>
+<li>Dizinleri ve dosyaları yazılabilir yapın: %s</li>
+<li>Güvenlik nedeniyle, aşağıdaki iki dizini <a href="http://phpsec.org/projects/guide/3.html" rel="external">belge kökü</a> ve klasör adlarını değiştirin: %s</li>
+<li>Dizinleri oluşturun (zaten mevcut değilse) ve yazılabilir yapın: %s</li>
+<li>Tarayıcınızın çerezini ve JavaScript'ini açın.</li>
+</ol>
+<h2>Yerel olarak yükleniyor</h2>
+<p>Geliştirme veya test amacıyla yerel bir ortam çalıştırıyorsanız önceki sürüme sahip olduğunuzdan emin olun.
+    gereksinimleri karşılandı. Bu yapıldıktan sonra, içeriği kopyalayın. <em>htdocs</em> directory (from the XOOPS
+    distribution file) to the root document path of your web environment. Once the files are copied there,
+    you can start the install by pointing you browser to "http://<em>siteniz.com</em>". Bu, yükleme işlemini başlatacaktır.
+</p>
+<h2>Barındırılan bir platforma kurulum</h2>
+<p>Barındırılan bir ortamda çalışıyorsanız, XOOPS dosyalarını yerel olarak veya varsa sunucuda paketinden çıkarın.
+    kabuk (yani SSH) erişimi. İşiniz bittiğinde, tüm XOOPS dosyalarını klasörden taşıdığınızdan veya kopyaladığınızdan emin olun. <em>htdocs</em>
+    dizinini kök web dizininize ekleyin (sağlayıcınız genellikle bu konumu yol tarifleri ile birlikte sağlar).
+    Dosyalar buraya kopyalandıktan sonra tarayıcınızı şu adrese yönlendirerek kurulumu başlatabilirsiniz:
+    "http://<em>siteniz.com</em>". Bu, yükleme işlemini başlatacaktır.
+</p>
+<h2>Kuruluma devam ediliyor</h2>
+<p>Yükleyicideki adım adım talimatları uygulamanız yeterlidir.</p>
+</div>
+</body>
+</html>
